@@ -1,0 +1,135 @@
+main {
+  width: 100vw;
+  height: 95vh;
+}
+
+.homebackpic {
+  height: 100%;
+  background-image: url('../../images/me.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+
+.subhead {
+  position: absolute;
+  bottom: 7%;
+  left: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subhead h1 {
+  text-align: center;
+  font-size: clamp(40px, 6vw, 6em);
+}
+
+.subhead h4 {
+  padding: 1.5rem;
+  text-align: center;
+  font-size: clamp(5px, 2vw, 2em);
+}
+
+.mainbutton {
+  border-radius: 45px;
+  background-color: black;
+}
+
+.mainbutton span {
+  display: flex;
+  border-radius: 45px;
+}
+
+.mainbutton a {
+  font-size: clamp(1.3em, 2vw, 2em);
+  border-radius: 45px;
+  padding: 2px 20px;
+  color: white;
+  cursor: pointer;
+}
+
+@media all and (max-width: 1024px) {
+  main {
+    height: 95vh;
+  }
+
+  .homebackpic {
+    height: 100%;
+    background-image: url('../../images/me.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  .subhead {
+    position: absolute;
+    bottom: 10%;
+    left: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subhead h1 {
+    text-align: center;
+    font-size: clamp(1em, 12vw, 5.5em);
+  }
+
+  .subhead h4 {
+    padding: 0;
+    font-size: clamp(1em, 7vw, 3em);
+    text-align: center;
+  }
+
+  .mainbutton {
+    order: -1;
+    border-radius: 40px;
+  }
+
+  .mainbutton span {
+    border-radius: 40px;
+  }
+
+  .mainbutton a {
+    border-radius: 40px;
+    font-size: clamp(1em, 5vw, 2.2em);
+    padding: 5px 20px;
+  }
+}
+
+@media all and (max-width:414px) {
+  .subhead {
+    bottom: 20px;
+    width: 100%;
+  }
+
+  .subhead h1 {
+    font-size: 35px;
+  }
+
+  .subhead h4 {
+    padding: 0;
+    font-size: 25px;
+  }
+
+  .mainbutton span {
+    display: block;
+    height: 25px;
+    width: 75px;
+    border-radius: 20px;
+  }
+
+  .mainbutton a {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    border-radius: 20px;
+  }
+}
