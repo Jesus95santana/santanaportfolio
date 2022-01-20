@@ -1,0 +1,90 @@
+.aboutbackpic {
+  background-image: url('../../images/guy.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.aboutsec1, .aboutsec2 {
+  width: 500px;
+  margin: 20px;
+}
+
+.aboutmain h3 {
+  font-size: 30px;
+  margin: 10px;
+}
+
+.aboutmain p {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+@media all and (max-width: 1024px) {
+  .aboutbackpic {
+    background-image: url('../../images/guy.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    background-size: 400%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+  }
+
+  .aboutsec1, .aboutsec2 {
+    border-radius: 30px;
+    position: relative;
+    background-color: lightgray;
+    width: 600px;
+    margin: 20px;
+  }
+
+  .aboutmain h3 {
+    font-size: 30px;
+    margin: 10px;
+  }
+
+  .aboutmain p {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
+
+@media all and (max-width:414px) {
+  .aboutbackpic {
+    background-position: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+  }
+
+  .aboutsec1, .aboutsec2 {
+    border: 3px solid black;
+    margin: 20px;
+    left: none;
+    border-radius: 1px;
+    width: auto;
+    overflow: scroll;
+  }
+
+  .aboutmain h3 {
+    font-size: 19px;
+    margin: 0;
+  }
+
+  .aboutmain p {
+    font-size: 16px;
+    line-height: normal;
+  }
+}
