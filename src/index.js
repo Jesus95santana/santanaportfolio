@@ -1,10 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import './index.css'
+import { Home } from './pages/Home/Home.js';
 
 class Index extends React.Component{
   render() {
     return(
-      <h1>Hello Worl</h1>
+      <Home />
     );
   }
 }
