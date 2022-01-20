@@ -1,0 +1,163 @@
+
+.navbar {
+  border-bottom: 1.3px solid #000;
+  min-height: 5vh;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navtitle {
+  background-image: url('../../images/Titlenav.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 400px;
+}
+
+.navtitle h2 {
+  color: white;
+  font-size: 40px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 1.3em;
+}
+
+.navmenu {
+  width: 50%;
+}
+
+.navmenu ul {
+  list-style: none;
+  display: inline-flex;
+  height: 100%;
+  width: 100%;
+}
+
+.navmenu li {
+  list-style: none;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navmenu li:hover {
+  background-color: black;
+}
+
+.navmenu a {
+  font-size: 20px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.navmenu a:hover {
+  color: white;
+}
+
+@media all and (max-width:1024px) {
+  .navbar {
+    height: 15em;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navtitle {
+    height: 6em;
+    width: 100%;
+    background-image: none;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navtitle h2 {
+    text-align: center;
+    font-size: 45px;
+    padding: 0;
+  }
+
+  .navmenu {
+    height: 100%;
+    width: 100%;
+  }
+
+  .navmenu ul {
+    background-color: white;
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+      'navhome navresume'
+      'navabout navcontact';
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .navmenu li {
+    border: 1px solid black;
+  }
+
+  .homelink, .resumelink, .aboutlink, .contactlink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .homelink {
+    grid-area: navhome;
+  }
+
+  .resumelink {
+    grid-area: navresume;
+  }
+
+  .aboutlink {
+    grid-area: navabout;
+  }
+
+  .contactlink {
+    grid-area: navcontact;
+  }
+
+  .navmenu a {
+    text-align: center;
+    font-size: 28px;
+  }
+
+}
+
+@media all and (max-width:414px) {
+  .navbar {
+    height: 15em;
+  }
+
+  .navtitle {
+    height: 5em;
+  }
+
+  .navtitle h2 {
+    font-size: 35px;
+  }
+
+  .navmenu ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navmenu li {
+    flex: 1;
+  }
+
+  .navmenu a {
+    font-size: 25px;
+  }
+}
