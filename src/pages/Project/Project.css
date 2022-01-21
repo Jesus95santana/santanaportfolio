@@ -1,0 +1,195 @@
+.projectback {
+  background-color: grey;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 200px 1fr;
+  grid-template-areas:
+    'title github'
+    'wrapper wrapper';
+}
+
+.projecttitle {
+  grid-area: title;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projecttitle h1 {
+  font-size: 70px;
+  text-decoration: underline;
+}
+
+.gitsection {
+  grid-area: github;
+  padding: 60px;
+  text-align: right;
+}
+
+.gitsection h3 {
+  font-size: 40px;
+}
+
+.gitbutton {
+  border-radius: 25px;
+}
+
+.gitbutton button {
+  border: 1px solid black;
+  color: white;
+  font-size: 25px;
+  padding: 6px 20px;
+  background-color: black;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.projectwrapper {
+  grid-area: wrapper;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 50px;
+}
+
+.projectbox {
+  display: flex;
+}
+
+.projectbox .boxtitle {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+  padding: 30px;
+  writing-mode: vertical-rl;
+  width: 300px;
+}
+
+.odd .boxtitle {
+  transform: rotate(180deg);
+}
+
+.projectbox figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.even figure {
+  order: -1;
+}
+
+.projectbox img {
+  border: 2px solid black;
+  height: 100%;
+  width: 100%;
+}
+
+.projectbox a {
+  border: 2px solid black;
+  position: absolute;
+  background-color: grey;
+  border-radius: 25px;
+}
+
+.projectbox button {
+  border-radius: 25px;
+  font-size: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+@media all and (max-width: 1024px) {
+  .projectback {
+    display: block;
+  }
+
+  .projecttitle {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .gitsection {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100px;
+    justify-content: space-around;
+    padding: 0;
+  }
+
+  .projectwrapper {
+    padding: 50px;
+    grid-gap: 3em;
+  }
+
+  .projectwrapper div {
+    border: 2px solid black;
+  }
+
+  .projectbox {
+    border: 5px solid darkgrey;
+    flex-direction: column;
+    margin: 0;
+    border-radius: 50px;
+    overflow: hidden;
+  }
+
+  .projectbox .boxtitle {
+    border: 2px solid white;
+    align-items: center;
+    padding: 10;
+    width: 100%;
+    font-size: 22px;
+    height: 50px;
+    background-color: white;
+    border-bottom: 2px solid black;
+    writing-mode: horizontal-tb;
+    transform: rotate(0deg);
+  }
+
+  .projectbox figure {
+    order: 0;
+    position: relative;
+    background-color: white;
+  }
+
+  .projectbox img {
+    border: 1px solid black;
+  }
+
+  .projectbox span {
+    bottom: 50%;
+  }
+}
+
+@media all and (max-width:414px) {
+  .projectback {
+    display: block;
+  }
+
+  .projecttitle h1 {
+    font-size: 50px;
+  }
+
+  .gitsection h3 {
+    font-size: 30px;
+  }
+
+  .gitbutton button {
+    font-size: 15px;
+    padding: 5px 15px;
+  }
+
+  .projectwrapper {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 0;
+  }
+
+  .projectbox {
+    margin: 0 0 25px 0;
+  }
+}

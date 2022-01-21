@@ -14,7 +14,7 @@ export class Navigation extends React.Component{
               <li className="homelink"><Link to='/home'>Home</Link></li>
               <li className="resumelink"><Link to='/resume'>Resume</Link></li>
               <li className="aboutlink"><Link to='/about'>About</Link></li>
-              <li className="contactlink"><a href="./contact.html">Contact</a></li>
+              <li className="contactlink"><Link to='/contact'>Contact</Link></li>
             </ul>
           </div>
         </nav>
