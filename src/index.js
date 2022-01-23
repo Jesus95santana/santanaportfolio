@@ -13,7 +13,7 @@ class Index extends React.Component{
     return(
       <Router>
         <Routes>
-          <Route path='/home' element=<Home /> />
+          <Route path='/' element=<Home /> />
           <Route path='/resume' element=<Resume /> />
           <Route path='/about' element=<About /> />
           <Route path='/contact' element=<Contact /> />
