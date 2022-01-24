@@ -5,9 +5,8 @@ import HtmlPic from '../../images/html.png';
 import CssPic from '../../images/css.png';
 import JsPic from '../../images/js.png';
 import PyPic from '../../images/py.png';
+
 import ResumePic from '../../images/resume.pdf';
-
-
 
 export class Resume extends React.Component {
   render() {
@@ -43,9 +42,15 @@ export class Resume extends React.Component {
             </section>
             <section className="resume">
               <h3>Resume</h3>
-              <figure className="resumefig"><img src={ResumePic} alt="resume pic"/></figure>
 
-              <span><a href="./images/resume.pdf">Quick View</a></span>
+
+              <figure className="resumefig"><img src={ResumePic} alt="resume pic"/>
+              </figure>
+
+
+              <span><a href="../../images/resume.pdf">Quick View</a></span>
+
+
             </section>
           </div>
         </main>
