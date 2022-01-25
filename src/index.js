@@ -8,6 +8,8 @@ import { About } from './pages/About/About.js';
 import { Contact } from './pages/Contact/Contact.js';
 import { Project } from './pages/Project/Project.js';
 
+import { ResumeViewer } from './pages/ResumeViewer/ResumeViewer.js';
+
 class Index extends React.Component{
   render() {
     return(
@@ -18,6 +20,9 @@ class Index extends React.Component{
           <Route path='/about' element=<About /> />
           <Route path='/contact' element=<Contact /> />
           <Route path='/project' element=<Project /> />
+
+          <Route path='/resumeviewer' element=<ResumeViewer /> />
+
         </Routes>
       </Router>
     );
