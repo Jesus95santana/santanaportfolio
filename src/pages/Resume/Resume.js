@@ -1,12 +1,15 @@
 import React from 'react';
 import { Navigation } from '../../components/navigation_banner/Navigation.js';
 import './Resume.css';
+
+import { Link } from 'react-router-dom';
+
 import HtmlPic from '../../images/html.png';
 import CssPic from '../../images/css.png';
 import JsPic from '../../images/js.png';
 import PyPic from '../../images/py.png';
 
-import ResumePic from '../../images/resume.pdf';
+import { ResumeViewer } from '../ResumeViewer/ResumeViewer.js';
 
 export class Resume extends React.Component {
   render() {
@@ -44,11 +47,12 @@ export class Resume extends React.Component {
               <h3>Resume</h3>
 
 
-              <figure className="resumefig"><img src={ResumePic} alt="resume pic"/>
+              <figure className="resumefig">
+              <ResumeViewer />
               </figure>
 
 
-              <span><a href="../../images/resume.pdf">Quick View</a></span>
+              <span><Link to='/ResumeViewer'>Quick View</Link></span>
 
 
             </section>
