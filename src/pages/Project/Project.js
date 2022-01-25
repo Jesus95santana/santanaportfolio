@@ -40,7 +40,7 @@ export class Project extends React.Component{
               <div className="projectbox odd">
                 <div className="boxtitle">Html & Css</div>
                 <figure>
-                  <a className="teabutton" href="./projects/11_14_Flex_Tea/document.html">
+                  <a className="teabutton" target='_blank' href={process.env.PUBLIC_URL + "./projects/11_14_Flex_Tea/document.html"}>
                     <button>Tea Cosy</button>
                   </a>
                   <img src={TeaPic} alt=""/>
@@ -50,7 +50,7 @@ export class Project extends React.Component{
               <div className="projectbox even">
                 <div className="boxtitle">Html, Css, &<br/> Javascript</div>
                 <figure>
-                  <a className="ballbutton" href="./projects/10_9_event_practice_ball/document.html">
+                  <a className="ballbutton" target='_blank' href={process.env.PUBLIC_URL + "./projects/10_9_event_practice_ball/document.html"}>
                     <button>Ball Bounce</button>
                   </a>
                   <img src={BallPic} alt=""/>
@@ -60,7 +60,7 @@ export class Project extends React.Component{
               <div className="projectbox odd">
                 <div className="boxtitle">Html, Css, &<br/> Javascript</div>
                 <figure>
-                  <a className="pizzabutton" href="./projects/10_15_forms/document.html">
+                  <a className="pizzabutton" target='_blank' href={process.env.PUBLIC_URL + "./projects/10_15_forms/document.html"}>
                     <button>Pizza Form</button>
                   </a>
                   <img src={BreadPic} alt=""/>
@@ -70,7 +70,7 @@ export class Project extends React.Component{
               <div className="projectbox even">
                 <div className="boxtitle">Html & Css</div>
                 <figure>
-                  <a className="surveybutton" href="./projects/11_4_Positioning/document.html">
+                  <a className="surveybutton" target='_blank' href={process.env.PUBLIC_URL + "./projects/11_4_Positioning/document.html"}>
                     <button>Online Survey</button>
                   </a>
                   <img src={SurveyPic} alt=""/>
@@ -80,7 +80,7 @@ export class Project extends React.Component{
               <div className="projectbox odd">
                 <div className="boxtitle">Html & Css</div>
                 <figure>
-                  <a className="pupbutton" href="./projects/10_6_Pup_spa/pup.html">
+                  <a className="pupbutton" target='_blank' href={process.env.PUBLIC_URL + "./projects/10_6_Pup_spa/pup.html"}>
                     <button>Pup Spa</button>
                   </a>
                   <img src={PupPic} alt=""/>
@@ -90,7 +90,7 @@ export class Project extends React.Component{
               <div className="projectbox even">
                 <div className="boxtitle">Html, Css, &<br/> Javascript</div>
                 <figure>
-                  <a className="calcbutton" href="./projects/11_7_Calculator/index.html">
+                  <a className="calcbutton" target='_blank' href={process.env.PUBLIC_URL + "./projects/11_7_Calculator/index.html"}>
                     <button>Calculator</button>
                   </a>
                   <img src={CalcPic} alt=""/>
@@ -100,7 +100,7 @@ export class Project extends React.Component{
               <div className="projectbox odd">
                 <div className="boxtitle">Html, Css, &<br/> Javascript</div>
                 <figure>
-                  <a className="todobutton" href="./projects/11_1_java_todo/document.html">
+                  <a className="todobutton" target='_blank' href={process.env.PUBLIC_URL + "./projects/11_1_java_todo/document.html"}>
                     <button>Todo List</button>
                   </a>
                   <img src={TodoPic} alt=""/>
@@ -110,7 +110,7 @@ export class Project extends React.Component{
               <div className="projectbox even">
                 <div className="boxtitle">Html & Css</div>
                 <figure>
-                  <a className="spacebutton" href="./projects/9_11_Nasa_web/9_11.html">
+                  <a className="spacebutton" target='_blank' href={process.env.PUBLIC_URL + "./projects/9_11_Nasa_web/9_11.html"}>
                     <button>Space Web</button>
                   </a>
                   <img src={SpacePic} alt=""/>
