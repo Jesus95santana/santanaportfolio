@@ -28,7 +28,7 @@ export class Project extends React.Component{
 
             <section className="gitsection">
               <h3>Link to my Github</h3>
-              <a className="gitbutton" href="https://github.com">
+              <a className="gitbutton" href="https://github.com/Jesus95santana/santanaportfolio">
                 <button>Github</button>
               </a>
             </section>
