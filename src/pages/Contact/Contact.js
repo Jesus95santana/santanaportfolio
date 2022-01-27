@@ -1,5 +1,6 @@
 import React from 'react';
 import { Navigation } from '../../components/navigation_banner/Navigation.js';
+import { ContactForm } from './ContactForm.js';
 import './Contact.css';
 
 export class Contact extends React.Component{
@@ -19,41 +20,8 @@ export class Contact extends React.Component{
               </p>
             </section>
 
-
-
             <section className="inputsection">
-
-              <form id="form" action="" method="">
-
-                <section className="nameinput">
-                  <label for="name">Name: *</label>
-                  <br/>
-                  <input type="text" name="survey" id="name" />
-                </section>
-
-                <section className="emailinput">
-                  <label for="email">Email Address: *</label>
-                  <br/>
-                  <input type="email" name="survey" id="email" />
-                </section>
-
-                <section className="companyinput">
-                  <label for="company">Company: *</label>
-                  <br/>
-                  <input type="text" name="survey" id="company" ></input>
-                </section>
-
-                <section className="commentinput">
-                  <label for="comment">Comment:</label>
-                  <br/>
-                  <textarea name="survey" id="comment" rows="5"></textarea>
-                </section>
-
-                <section>
-                  <button className="formsubmitbutton" type="submit">Submit</button>
-                </section>
-              </form>
-
+              <ContactForm />
             </section>
           </div>
         </main>
