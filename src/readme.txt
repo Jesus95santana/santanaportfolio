@@ -11,3 +11,6 @@ $npm install react-router-dom@6
 react-pdf-viewer
 $npm install pdfjs-dist@2.12.313
 $npm install @react-pdf-viewer/core@3.1.0
+
+
+"homepage": "https://www.santanaportfolio.com/",
