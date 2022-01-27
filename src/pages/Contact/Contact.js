@@ -16,7 +16,7 @@ export class Contact extends React.Component{
 
               <h1 className="infohead">Info</h1>
               <p className="info1">
-                I am currently working on linking this form into a database for Firebase. As this is not yet complete please contact me via Email: Jesus95santana@icloud.com <br/> Thank you.
+                Thank you for checking out my webscite! Let me know what you think through this form. Im always working on projects so give me at least 24 hours to respond back. <br/><br/> Thank you and have a great day!.
               </p>
             </section>
 

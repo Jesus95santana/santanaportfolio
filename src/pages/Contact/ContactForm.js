@@ -1,4 +1,5 @@
 import React from 'react';
+import emailjs from '@emailjs/browser';
 
 export class ContactForm extends React.Component {
   constructor(props) {
@@ -6,7 +7,7 @@ export class ContactForm extends React.Component {
     this.state={
       name: '',
       email: '',
-      company: '',
+      subject: '',
       comment: '',
     };
 
@@ -25,20 +26,29 @@ export class ContactForm extends React.Component {
   }
 
   handleSubmit(event) {
-    alert('Submission Succesful!\n' + this.state.name );
+    alert('Submission Succesful!\n');
     event.preventDefault();
+    const serviceId='service_twzhi08'
+    const templateId='template_ppx2xjm'
+    const userId='user_zA6kwtauOu3xt3kdc8alx'
+    emailjs.send(serviceId, templateId, this.state, userId)
+    .then((result) => {
+    console.log(result.text);
+    }, (error) => {
+    console.log(error.text);
+  });
   }
 
   render() {
     return(
       <form
+      method='post'
+      action='#'
       id="form"
-      action=""
-      method=""
       onSubmit={this.handleSubmit}>
 
         <section className="nameinput">
-          <label for="name">Name: *</label>
+          <label htmlFor="name">Name: *</label>
           <br/>
           <input
           name='name'
@@ -49,7 +59,7 @@ export class ContactForm extends React.Component {
         </section>
 
         <section className="emailinput">
-          <label for="email">Email Address: *</label>
+          <label htmlFor="email">Email Address: *</label>
           <br/>
           <input
           name='email'
@@ -59,19 +69,19 @@ export class ContactForm extends React.Component {
           onChange={this.handleChange}/>
         </section>
 
-        <section className="companyinput">
-          <label for="company">Company: *</label>
+        <section className="subjectinput">
+          <label htmlFor="subject">Subject: *</label>
           <br/>
           <input
-          name='company'
+          name='subject'
           type="text"
-          id="company"
-          value={this.state.company}
+          id="subject"
+          value={this.state.subject}
           onChange={this.handleChange}></input>
         </section>
 
         <section className="commentinput">
-          <label for="comment">Comment:</label>
+          <label htmlFor="comment">Comment:</label>
           <br/>
           <textarea
           name='comment'
