@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route, HashRouter } from 'react-router-dom';
 import './index.css';
 import { Home } from './pages/Home/Home.js';
 import { Resume } from './pages/Resume/Resume.js';
@@ -13,7 +13,7 @@ import { ResumeViewer } from './pages/ResumeViewer/ResumeViewer.js';
 class Index extends React.Component{
   render() {
     return(
-      <Router>
+      <HashRouter>
         <Routes>
           <Route path='/' element=<Home /> />
           <Route path='/resume' element=<Resume /> />
@@ -24,7 +24,7 @@ class Index extends React.Component{
           <Route path='/resumeviewer' element=<ResumeViewer /> />
 
         </Routes>
-      </Router>
+      </HashRouter>
     );
   }
 }
