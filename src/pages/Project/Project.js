@@ -3,7 +3,7 @@ import { Navigation } from '../../components/navigation_banner/Navigation.js';
 import './Project.css';
 import TeaPic from "../../images/tea.png";
 import BallPic from "../../images/javaball.png";
-import BreadPic from "../../images/breadform.png";
+import BreadPic from "../../images/stopwatch.png";
 import SurveyPic from "../../images/survey.png";
 import PupPic from "../../images/pup.png";
 import CalcPic from "../../images/calcjav.png";
@@ -60,8 +60,8 @@ export class Project extends React.Component{
               <div className="projectbox odd">
                 <div className="boxtitle">Html, Css, &<br/> Javascript</div>
                 <figure>
-                  <a className="pizzabutton" target='_blank' rel="noreferrer" href={process.env.PUBLIC_URL + "./projects/10_15_forms/document.html"}>
-                    <button>Pizza Form</button>
+                  <a className="timerbutton" target='_blank' rel="noreferrer" href={process.env.PUBLIC_URL + "./projects/2_15_stopwatch/index.html"}>
+                    <button>Timer</button>
                   </a>
                   <img src={BreadPic} alt=""/>
                 </figure>
