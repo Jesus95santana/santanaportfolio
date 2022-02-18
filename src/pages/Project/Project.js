@@ -2,8 +2,8 @@ import React from 'react';
 import { Navigation } from '../../components/navigation_banner/Navigation.js';
 import './Project.css';
 import TeaPic from "../../images/tea.png";
-import BallPic from "../../images/javaball.png";
-import BreadPic from "../../images/breadform.png";
+import TicPic from "../../images/tictactoe.png";
+import TimerPic from "../../images/stopwatch.png";
 import SurveyPic from "../../images/survey.png";
 import PupPic from "../../images/pup.png";
 import CalcPic from "../../images/calcjav.png";
@@ -43,27 +43,27 @@ export class Project extends React.Component{
                   <a className="teabutton" target='_blank' rel="noreferrer" href={process.env.PUBLIC_URL + "./projects/11_14_Flex_Tea/document.html"}>
                     <button>Tea Cosy</button>
                   </a>
-                  <img src={TeaPic} alt=""/>
+                  <img src={TeaPic} alt="tea image"/>
                 </figure>
               </div>
 
               <div className="projectbox even">
                 <div className="boxtitle">Html, Css, &<br/> Javascript</div>
                 <figure>
-                  <a className="ballbutton" target='_blank' rel="noreferrer" href={process.env.PUBLIC_URL + "./projects/10_9_event_practice_ball/document.html"}>
-                    <button>Ball Bounce</button>
+                  <a className="tictacbutton" target='_blank' rel="noreferrer" href={process.env.PUBLIC_URL + "./projects/2_16_tictactoe/index.html"}>
+                    <button>Tic Tac Toe</button>
                   </a>
-                  <img src={BallPic} alt=""/>
+                  <img src={TicPic} alt="tictactoe image"/>
                 </figure>
               </div>
 
               <div className="projectbox odd">
                 <div className="boxtitle">Html, Css, &<br/> Javascript</div>
                 <figure>
-                  <a className="pizzabutton" target='_blank' rel="noreferrer" href={process.env.PUBLIC_URL + "./projects/10_15_forms/document.html"}>
-                    <button>Pizza Form</button>
+                  <a className="timerbutton" target='_blank' rel="noreferrer" href={process.env.PUBLIC_URL + "./projects/2_15_stopwatch/index.html"}>
+                    <button>Timer</button>
                   </a>
-                  <img src={BreadPic} alt=""/>
+                  <img src={TimerPic} alt="timer image"/>
                 </figure>
               </div>
 
@@ -73,7 +73,7 @@ export class Project extends React.Component{
                   <a className="surveybutton" target='_blank' rel="noreferrer" href={process.env.PUBLIC_URL + "./projects/11_4_Positioning/document.html"}>
                     <button>Online Survey</button>
                   </a>
-                  <img src={SurveyPic} alt=""/>
+                  <img src={SurveyPic} alt="survey image"/>
                 </figure>
               </div>
 
@@ -83,7 +83,7 @@ export class Project extends React.Component{
                   <a className="pupbutton" target='_blank' rel="noreferrer" href={process.env.PUBLIC_URL + "./projects/10_6_Pup_spa/pup.html"}>
                     <button>Pup Spa</button>
                   </a>
-                  <img src={PupPic} alt=""/>
+                  <img src={PupPic} alt="pup web image"/>
                 </figure>
               </div>
 
@@ -93,7 +93,7 @@ export class Project extends React.Component{
                   <a className="calcbutton" target='_blank' rel="noreferrer" href={process.env.PUBLIC_URL + "./projects/11_7_Calculator/index.html"}>
                     <button>Calculator</button>
                   </a>
-                  <img src={CalcPic} alt=""/>
+                  <img src={CalcPic} alt="calculator image"/>
                 </figure>
               </div>
 
@@ -103,7 +103,7 @@ export class Project extends React.Component{
                   <a className="todobutton" target='_blank' rel="noreferrer" href={process.env.PUBLIC_URL + "./projects/11_1_java_todo/document.html"}>
                     <button>Todo List</button>
                   </a>
-                  <img src={TodoPic} alt=""/>
+                  <img src={TodoPic} alt="todo list image"/>
                 </figure>
               </div>
 
@@ -113,7 +113,7 @@ export class Project extends React.Component{
                   <a className="spacebutton" target='_blank' rel="noreferrer" href={process.env.PUBLIC_URL + "./projects/9_11_Nasa_web/9_11.html"}>
                     <button>Space Web</button>
                   </a>
-                  <img src={SpacePic} alt=""/>
+                  <img src={SpacePic} alt="spaceweb image"/>
                 </figure>
               </div>
 
