@@ -43,7 +43,7 @@ export class Project extends React.Component{
                   <a className="teabutton" target='_blank' rel="noreferrer" href={process.env.PUBLIC_URL + "./projects/11_14_Flex_Tea/document.html"}>
                     <button>Tea Cosy</button>
                   </a>
-                  <img src={TeaPic} alt="tea image"/>
+                  <img src={TeaPic} alt="tea"/>
                 </figure>
               </div>
 
@@ -53,7 +53,7 @@ export class Project extends React.Component{
                   <a className="tictacbutton" target='_blank' rel="noreferrer" href={process.env.PUBLIC_URL + "./projects/2_16_tictactoe/index.html"}>
                     <button>Tic Tac Toe</button>
                   </a>
-                  <img src={TicPic} alt="tictactoe image"/>
+                  <img src={TicPic} alt="tictactoe"/>
                 </figure>
               </div>
 
@@ -63,7 +63,7 @@ export class Project extends React.Component{
                   <a className="timerbutton" target='_blank' rel="noreferrer" href={process.env.PUBLIC_URL + "./projects/2_15_stopwatch/index.html"}>
                     <button>Timer</button>
                   </a>
-                  <img src={TimerPic} alt="timer image"/>
+                  <img src={TimerPic} alt="timer"/>
                 </figure>
               </div>
 
@@ -73,7 +73,7 @@ export class Project extends React.Component{
                   <a className="surveybutton" target='_blank' rel="noreferrer" href={process.env.PUBLIC_URL + "./projects/11_4_Positioning/document.html"}>
                     <button>Online Survey</button>
                   </a>
-                  <img src={SurveyPic} alt="survey image"/>
+                  <img src={SurveyPic} alt="survey"/>
                 </figure>
               </div>
 
@@ -83,7 +83,7 @@ export class Project extends React.Component{
                   <a className="pupbutton" target='_blank' rel="noreferrer" href={process.env.PUBLIC_URL + "./projects/10_6_Pup_spa/pup.html"}>
                     <button>Pup Spa</button>
                   </a>
-                  <img src={PupPic} alt="pup web image"/>
+                  <img src={PupPic} alt="pup web"/>
                 </figure>
               </div>
 
@@ -93,7 +93,7 @@ export class Project extends React.Component{
                   <a className="calcbutton" target='_blank' rel="noreferrer" href={process.env.PUBLIC_URL + "./projects/11_7_Calculator/index.html"}>
                     <button>Calculator</button>
                   </a>
-                  <img src={CalcPic} alt="calculator image"/>
+                  <img src={CalcPic} alt="calculator"/>
                 </figure>
               </div>
 
@@ -103,7 +103,7 @@ export class Project extends React.Component{
                   <a className="todobutton" target='_blank' rel="noreferrer" href={process.env.PUBLIC_URL + "./projects/11_1_java_todo/document.html"}>
                     <button>Todo List</button>
                   </a>
-                  <img src={TodoPic} alt="todo list image"/>
+                  <img src={TodoPic} alt="todo list"/>
                 </figure>
               </div>
 
@@ -113,7 +113,7 @@ export class Project extends React.Component{
                   <a className="spacebutton" target='_blank' rel="noreferrer" href={process.env.PUBLIC_URL + "./projects/9_11_Nasa_web/9_11.html"}>
                     <button>Space Web</button>
                   </a>
-                  <img src={SpacePic} alt="spaceweb image"/>
+                  <img src={SpacePic} alt="spaceweb"/>
                 </figure>
               </div>
 
