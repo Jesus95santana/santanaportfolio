@@ -34,7 +34,6 @@ We can fix an element to a specific position on the page (regardless of user scr
 /* ============ Z-Index
 The z-index property controls how far back or how far forward an element should appear on the web page when elements overlap. z-index property does not work on static elements. */
 header {
-  border: 1px solid red;
   z-index: 10;
   background-color: #466995;
   border-bottom: 1px solid #466995;
